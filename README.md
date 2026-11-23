@@ -2,15 +2,13 @@
 
 Arduino Drive là ứng dụng Android điều khiển xe hai bánh qua Bluetooth Classic (HC-05). Arduino UNO R3 nhận lệnh, điều khiển hai động cơ qua L298N và dùng cảm biến VL53L0X phía trước để hỗ trợ tránh va chạm.
 
-[![TẢI APK MỚI NHẤT](https://img.shields.io/badge/T%E1%BA%A2I%20APK%20M%E1%BB%9AI%20NH%E1%BA%A4T-18713A?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Dinh02-hub/D-n-xe-i-u-khi-n-b-ng-HC-05-Arduino-uno-.-V-ch-ng-va-ch-m-b-ng-VL53L0X/releases/latest/download/Arduino-Drive.apk)
+[![TẢI APK MỚI NHẤT](https://img.shields.io/badge/T%E1%BA%A2I%20APK%20M%E1%BB%9AI%20NH%E1%BA%A4T-18713A?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Dinh02-hub/D-n-xe-i-u-khi-n-b-ng-HC-05-Arduino-uno-.-V-ch-ng-va-ch-m-b-ng-VL53L0X/raw/refs/heads/main/download/Arduino-Drive-1.0.1.apk)
 
-**Phiên bản phát hành dự kiến `v1.0.1`** · Android 6.0 trở lên · [Xem tất cả phiên bản](https://github.com/Dinh02-hub/D-n-xe-i-u-khi-n-b-ng-HC-05-Arduino-uno-.-V-ch-ng-va-ch-m-b-ng-VL53L0X/releases)
-
-Nút tải sẽ hoạt động khi GitHub có bản phát hành mới nhất đính kèm `Arduino-Drive.apk`.
+**Phiên bản hiện tại `v1.0.1`** · Android 6.0 trở lên
 
 ## Cài đặt và kết nối Bluetooth
 
-1. Tải và mở `Arduino-Drive.apk` trên điện thoại. Nếu Android yêu cầu, cho phép trình duyệt hoặc trình quản lý tệp cài ứng dụng từ nguồn này, rồi tắt quyền đó sau khi cài.
+1. Nhấn **TẢI APK MỚI NHẤT** và mở `Arduino-Drive-1.0.1.apk` trên điện thoại. Nếu Android yêu cầu, cho phép trình duyệt hoặc trình quản lý tệp cài ứng dụng từ nguồn này, rồi tắt quyền đó sau khi cài.
 2. Nạp firmware cho UNO theo phần bên dưới. Kê bánh lên khỏi mặt đất trước khi cấp nguồn cho xe.
 3. Bật Bluetooth, rồi ghép đôi HC-05 trong **Cài đặt Bluetooth** của điện thoại. Đóng các ứng dụng khác đang kết nối với module.
 4. Mở **Arduino Drive** → **Bắt đầu**. Trong **Cài đặt** của ứng dụng, tắt **Mô phỏng khi mở Điều khiển** nếu đang bật. Quay về màn hình chính, mở **Điều khiển**, cấp quyền **Thiết bị ở gần** nếu được hỏi (Android 12 trở lên) và chọn HC-05 đã ghép đôi.
@@ -104,7 +102,3 @@ Tham khảo [ghi nhận kiểm thử các lần phát triển trước](docs/VER
 - Kê bánh và thử từng hướng ở PWM thấp trước. Kiểm tra STOP, mức 0% và dừng khi mất lệnh. Khi tăng từ 0%, xe chỉ được chạy sau khi có lệnh hướng mới.
 - Chỉ thử trên sàn trống sau khi đã kiểm tra dây và hướng quay. Dùng nguồn giới hạn dòng, đo dòng phanh, nhiệt độ L298N và quãng dừng thực. Chọn ngưỡng phanh đủ cho quãng phản ứng, quãng hãm và khoảng dự phòng. Xem mục 5.3 và bảng 5 trong [datasheet L298](https://www.st.com/resource/en/datasheet/l298.pdf).
 - Xe chỉ đo khoảng cách phía trước. Giữ khu vực phía sau và hai bên trống khi lùi hoặc rẽ. Khi cảm biến báo lỗi, dừng để kiểm tra trước khi tiếp tục chạy.
-
-## Quy ước phát hành
-
-Dùng tag dạng `vX.Y.Z` và tiêu đề **Arduino Drive vX.Y.Z**. Đính kèm APK với tên cố định `Arduino-Drive.apk` trên mỗi GitHub Release để nút tải luôn trỏ đến bản mới nhất. Lưu APK và đầu ra build ngoài Git.

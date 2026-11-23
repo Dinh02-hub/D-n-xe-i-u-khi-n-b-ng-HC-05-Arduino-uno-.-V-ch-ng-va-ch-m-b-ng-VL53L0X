@@ -8,6 +8,7 @@ local.properties
 .externalNativeBuild/
 captures/
 *.apk
+!/download/*.apk
 *.aab
 *.apks
 *.jks
