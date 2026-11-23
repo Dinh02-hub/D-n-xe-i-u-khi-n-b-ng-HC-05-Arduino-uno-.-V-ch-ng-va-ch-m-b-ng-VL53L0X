@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/brand" android:textColor="?attr/driveInk" android:textSize="20sp" android:letterSpacing="-0.02" android:fontFamily="sans-serif-medium" />
+            <ImageButton app:tint="?attr/driveInk" android:id="@+id/settingsButton" android:layout_width="48dp" android:layout_height="48dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_settings" android:contentDescription="@string/settings" />
+        </LinearLayout>
+        <com.arduinodrive.ui.CarPreviewView android:id="@+id/heroCar" android:layout_width="match_parent" android:layout_height="230dp" android:layout_marginTop="12dp" android:contentDescription="@string/chip_preview" />
+        <TextView style="@style/Drive.Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/connection_title" />
+        <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/connection_subtitle" />
+        <LinearLayout android:id="@+id/connectionSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:orientation="vertical">
+            <TextView android:id="@+id/connectionStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/simulation_ready" android:textColor="?attr/driveInk" android:textSize="15sp" android:fontFamily="sans-serif-medium" />
+            <TextView android:id="@+id/connectionDetail" style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/simulation_detail" android:textSize="13sp" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/openControlButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="20dp" android:text="@string/open_control" />
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="28dp" android:background="?attr/driveLine" />
+        <LinearLayout android:id="@+id/pairedDeviceCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center_vertical">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mock_device" android:textSize="15sp" android:textColor="?attr/driveInk" android:fontFamily="sans-serif-medium" />
+                <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/mock_device_detail" android:textSize="12sp" />
+            </LinearLayout>
+            <TextView style="@style/Drive.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mock_badge" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The XML attribute was added in API 27; older APIs retain the dark bar. -->
+    <style name="Theme.ArduinoDrive" parent="Theme.ArduinoDrive.Base">
+        <item name="android:navigationBarColor">?attr/driveBackground</item>
+        <item name="android:windowLightNavigationBar">@bool/light_system_bars</item>
+    </style>
+    <style name="Theme.ArduinoDrive.Welcome" parent="Theme.ArduinoDrive.Welcome.Base">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,15 @@
+Ta có quãng đường sẽ dừng được khi mà xe bắt đầu phát hiện ngưỡng là:
+d = (v^2) / (2 * a) + v * t;
+
+với v là vận tốc của xe,
+    a là gia tốc hãm
+    t là thời gian phản ứng của cảm biến đo khoảng cách
+
+Ví dụ v là 1.2 m/s hay 4.32 km/h và a = 2 m/s^2 và t = 0.1 s,
+thì ta có quảng đường đi cho tới lúc dừng là d = 0.48 m = 48 cm
+=> Xe sẽ tông với ngưỡng là 40 cm, vì vậy có những cách giải quyết sau:
+
+1. Giảm vận tốc của xe xuống mức an toàn hơn, ví dụ giảm xuống 0.8 m/s (2.88 km/h) để quãng đường dừng lại ngắn hơn.
+2. Tăng gia tốc hãm của xe, ví dụ tăng lên 3 m/s^2 để quãng đường dừng lại ngắn hơn.
+3. Giảm thời gian phản ứng của cảm biến đo khoảng cách, ví dụ giảm xuống 0.05 s để quãng đường dừng lại ngắn hơn.
+4. Tăng khoảng cách an toàn giữa các xe, ví dụ tăng lên 50 cm để có thời gian phản ứng tốt hơn.

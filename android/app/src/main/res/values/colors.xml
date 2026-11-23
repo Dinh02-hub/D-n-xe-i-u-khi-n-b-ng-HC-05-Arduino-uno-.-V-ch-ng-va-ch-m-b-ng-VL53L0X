@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="welcome_background">#0E0E10</color>
+    <color name="welcome_ink">#F2EEE8</color>
+    <color name="welcome_muted">#B2B0AE</color>
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="ink">#1D1D1D</color>
+    <color name="muted">#6B6B6B</color>
+    <color name="line">#D4D4D4</color>
+    <color name="accent">#242424</color>
+    <color name="on_accent">#FFFFFF</color>
+    <color name="accent_soft">#E6E6E6</color>
+    <color name="danger">#CC3038</color>
+    <color name="warning_surface">#FFF1EE</color>
+    <color name="warning_ink">#B8242E</color>
+    <color name="sensor_warning_surface">#FFF1CD</color>
+    <color name="sensor_warning_ink">#623704</color>
+    <color name="on_danger">#FFFFFF</color>
+    <color name="hero">#242424</color>
+    <color name="hero_muted">#B5B5B5</color>
+    <color name="hero_text">#F5F5F5</color>
+    <color name="scrim">#66000000</color>
+</resources>

@@ -1,0 +1,33 @@
+# Android / Gradle / local SDK
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+*.apks
+*.jks
+*.keystore
+keystore.properties
+# Arduino build output
+*.hex
+*.elf
+*.eep
+*.o
+*.a
+# Local machine / secrets
+.env
+.env.*
+!.env.example
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.log
+*.tmp
+*.bak
+output/

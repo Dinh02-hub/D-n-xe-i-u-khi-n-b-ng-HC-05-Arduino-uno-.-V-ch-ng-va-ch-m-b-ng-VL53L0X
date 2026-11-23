@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="system_background">#11253B</color>
+    <color name="system_surface">#1C354F</color>
+    <color name="system_ink">#E6F0FB</color>
+    <color name="system_muted">#ADBCD0</color>
+    <color name="system_line">#405B76</color>
+    <color name="system_accent">#8FC5F4</color>
+    <color name="system_on_accent">#0D243B</color>
+    <color name="system_accent_soft">#2B4B68</color>
+    <color name="system_danger">#D32F3D</color>
+    <color name="system_warning_surface">#3B2834</color>
+    <color name="system_warning_ink">#FFB7B2</color>
+    <color name="system_on_danger">#FFFFFF</color>
+    <color name="system_hero">#193C5C</color>
+    <color name="system_hero_muted">#B0D0ED</color>
+    <color name="system_hero_text">#F7FBFF</color>
+    <color name="system_scrim">#99091524</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical">
+            <ImageButton app:tint="?attr/driveInk" android:id="@+id/backButton" android:layout_width="48dp" android:layout_height="48dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_arrow_back" android:contentDescription="@string/back" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="@string/settings" android:textSize="24sp" android:fontFamily="sans-serif-medium" android:textColor="?attr/driveInk" />
+        </LinearLayout>
+        <TextView style="@style/Drive.Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/appearance" />
+        <com.google.android.material.button.MaterialButtonToggleGroup android:id="@+id/themeToggle" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="12dp" app:singleSelection="true" app:selectionRequired="true">
+            <com.google.android.material.button.MaterialButton android:id="@+id/themeLight" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="@string/theme_light" android:textAllCaps="false" app:cornerRadius="8dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/themeDark" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="@string/theme_dark" android:textAllCaps="false" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/themeSystem" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="@string/theme_system" android:textAllCaps="false" app:cornerRadius="8dp" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="28dp" android:layout_marginBottom="24dp" android:background="?attr/driveLine" />
+        <TextView style="@style/Drive.Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/safety_settings" />
+        <TextView android:id="@+id/safetySettingsStatus" style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/safety_connect" android:textSize="13sp" android:accessibilityLiveRegion="polite" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/stop_distance" android:textSize="16sp" android:textColor="?attr/driveInk" />
+            <TextView android:id="@+id/distanceValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="@string/value_unknown" android:textSize="15sp" android:textColor="?attr/driveAccent" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <com.google.android.material.slider.Slider android:id="@+id/distanceSlider" android:layout_width="match_parent" android:layout_height="48dp" android:contentDescription="@string/stop_distance" android:valueFrom="10" android:valueTo="150" android:stepSize="1" android:value="40" app:trackHeight="3dp" app:thumbRadius="9dp" app:tickVisible="false" />
+        <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stop_distance_hint" android:textSize="13sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/sensor_interval" android:textSize="16sp" android:textColor="?attr/driveInk" />
+            <TextView android:id="@+id/intervalValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="@string/value_unknown" android:textSize="15sp" android:textColor="?attr/driveAccent" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <com.google.android.material.slider.Slider android:id="@+id/intervalSlider" android:layout_width="match_parent" android:layout_height="48dp" android:contentDescription="@string/sensor_interval" android:valueFrom="40" android:valueTo="200" android:stepSize="1" android:value="60" app:trackHeight="3dp" app:thumbRadius="9dp" app:tickVisible="false" />
+        <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sensor_interval_hint" android:textSize="13sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/slowdown_zone" android:textSize="16sp" android:textColor="?attr/driveInk" />
+            <TextView android:id="@+id/zoneValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="@string/value_unknown" android:textSize="15sp" android:textColor="?attr/driveAccent" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <com.google.android.material.slider.Slider android:id="@+id/zoneSlider" android:layout_width="match_parent" android:layout_height="48dp" android:contentDescription="@string/slowdown_zone" android:valueFrom="0" android:valueTo="190" android:stepSize="1" android:value="60" app:trackHeight="3dp" app:thumbRadius="9dp" app:tickVisible="false" />
+        <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/slowdown_zone_hint" android:textSize="13sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/electric_brake" android:textSize="16sp" android:textColor="?attr/driveInk" />
+            <TextView android:id="@+id/brakeValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="@string/value_unknown" android:textSize="15sp" android:textColor="?attr/driveAccent" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <com.google.android.material.slider.Slider android:id="@+id/brakeSlider" android:layout_width="match_parent" android:layout_height="48dp" android:contentDescription="@string/electric_brake" android:valueFrom="1" android:valueTo="60" android:stepSize="1" android:value="30" app:trackHeight="3dp" app:thumbRadius="9dp" app:tickVisible="false" />
+        <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/electric_brake_hint" android:textSize="13sp" />
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" android:background="?attr/driveLine" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/defaultSimulationSwitch" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/simulation_default" android:textSize="16sp" android:textColor="?attr/driveInk" />
+        <TextView style="@style/Drive.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/simulation_default_hint" android:textSize="13sp" />
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" android:background="?attr/driveLine" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/aboutButton" style="@style/Drive.OutlineButton" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/about_app" android:gravity="start|center_vertical" app:strokeWidth="0dp" android:paddingLeft="0dp" android:paddingRight="0dp" />
+    </LinearLayout>
+</ScrollView>

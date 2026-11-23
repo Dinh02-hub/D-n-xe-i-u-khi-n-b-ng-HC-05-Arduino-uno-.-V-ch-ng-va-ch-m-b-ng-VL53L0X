@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="driveBackground" format="color" />
+    <attr name="driveSurface" format="color" />
+    <attr name="driveInk" format="color" />
+    <attr name="driveMuted" format="color" />
+    <attr name="driveLine" format="color" />
+    <attr name="driveAccent" format="color" />
+    <attr name="driveOnAccent" format="color" />
+    <attr name="driveAccentSoft" format="color" />
+    <attr name="driveDanger" format="color" />
+    <attr name="driveWarningSurface" format="color" />
+    <attr name="driveWarningInk" format="color" />
+    <attr name="driveOnDanger" format="color" />
+    <attr name="driveHero" format="color" />
+    <attr name="driveHeroMuted" format="color" />
+    <attr name="driveHeroText" format="color" />
+    <attr name="driveScrim" format="color" />
+</resources>

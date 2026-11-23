@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ArduinoDrive.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="driveBackground">@color/background</item>
+        <item name="driveSurface">@color/surface</item>
+        <item name="driveInk">@color/ink</item>
+        <item name="driveMuted">@color/muted</item>
+        <item name="driveLine">@color/line</item>
+        <item name="driveAccent">@color/accent</item>
+        <item name="driveOnAccent">@color/on_accent</item>
+        <item name="driveAccentSoft">@color/accent_soft</item>
+        <item name="driveDanger">@color/danger</item>
+        <item name="driveWarningSurface">@color/warning_surface</item>
+        <item name="driveWarningInk">@color/warning_ink</item>
+        <item name="driveOnDanger">@color/on_danger</item>
+        <item name="driveHero">@color/hero</item>
+        <item name="driveHeroMuted">@color/hero_muted</item>
+        <item name="driveHeroText">@color/hero_text</item>
+        <item name="driveScrim">@color/scrim</item>
+        <item name="colorPrimary">?attr/driveAccent</item>
+        <item name="colorPrimaryVariant">?attr/driveAccent</item>
+        <item name="colorOnPrimary">?attr/driveOnAccent</item>
+        <item name="colorSecondary">?attr/driveAccent</item>
+        <item name="colorOnSecondary">?attr/driveOnAccent</item>
+        <item name="colorSurface">?attr/driveSurface</item>
+        <item name="colorOnSurface">?attr/driveInk</item>
+        <item name="colorError">?attr/driveDanger</item>
+        <item name="android:colorBackground">?attr/driveBackground</item>
+        <item name="android:windowBackground">?attr/driveBackground</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">?attr/driveAccent</item>
+        <item name="android:textColorPrimary">?attr/driveInk</item>
+        <item name="android:textColorSecondary">?attr/driveMuted</item>
+        <item name="android:statusBarColor">?attr/driveBackground</item>
+        <!-- Android 6/7 use white navigation icons, so retain a dark navigation bar. -->
+        <item name="android:navigationBarColor">?attr/driveHero</item>
+        <item name="android:windowLightStatusBar">@bool/light_system_bars</item>
+        <item name="materialButtonStyle">@style/Drive.Button</item>
+    </style>
+    <style name="Theme.ArduinoDrive" parent="Theme.ArduinoDrive.Base" />
+    <style name="Theme.ArduinoDrive.Welcome.Base" parent="Theme.ArduinoDrive">
+        <item name="android:windowBackground">@color/welcome_background</item>
+        <item name="android:statusBarColor">@color/welcome_background</item>
+        <item name="android:navigationBarColor">@color/welcome_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.ArduinoDrive.Welcome" parent="Theme.ArduinoDrive.Welcome.Base" />
+    <style name="Theme.ArduinoDrive.System" parent="Theme.ArduinoDrive">
+        <item name="driveBackground">@color/system_background</item>
+        <item name="driveSurface">@color/system_surface</item>
+        <item name="driveInk">@color/system_ink</item>
+        <item name="driveMuted">@color/system_muted</item>
+        <item name="driveLine">@color/system_line</item>
+        <item name="driveAccent">@color/system_accent</item>
+        <item name="driveOnAccent">@color/system_on_accent</item>
+        <item name="driveAccentSoft">@color/system_accent_soft</item>
+        <item name="driveDanger">@color/system_danger</item>
+        <item name="driveWarningSurface">@color/system_warning_surface</item>
+        <item name="driveWarningInk">@color/system_warning_ink</item>
+        <item name="driveOnDanger">@color/system_on_danger</item>
+        <item name="driveHero">@color/system_hero</item>
+        <item name="driveHeroMuted">@color/system_hero_muted</item>
+        <item name="driveHeroText">@color/system_hero_text</item>
+        <item name="driveScrim">@color/system_scrim</item>
+    </style>
+    <style name="Drive.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="Drive.OutlineButton" parent="Drive.Button">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">?attr/driveInk</item>
+        <item name="strokeColor">?attr/driveLine</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="Drive.Title" parent="">
+        <item name="android:textColor">?attr/driveInk</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.025</item>
+    </style>
+    <style name="Drive.Label" parent="">
+        <item name="android:textColor">?attr/driveMuted</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <style name="Drive.Body" parent="">
+        <item name="android:textColor">?attr/driveMuted</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+</resources>
